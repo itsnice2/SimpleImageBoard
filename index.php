@@ -3,18 +3,17 @@
 <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
         <title>SimpleImageBoard</title>
+
         <link rel="icon" type="image/x-icon" href="assets/images/img.ico">
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.5/dist/bootstrap-table.min.css">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.5/dist/bootstrap-table.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.5/dist/bootstrap-table.min.css">    
+        <!-- <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" /> -->
+
         <link href="assets/css/styles.css" rel="stylesheet" />
-        <link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+        
 </head>
 <body class="webseite-bg">
 
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
-        <script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
-        <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+
 
         <!-- file-upload mit PHP -->
         <!-- https://www.w3schools.com/php/php_file_upload.asp -->
@@ -122,42 +121,17 @@
         </div>
 
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap-table@1.22.5/dist/bootstrap-table.min.js"></script>
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
+        <!--
+                <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+                <script type="text/javascript" src="/fancybox/jquery.easing-1.4.pack.js"></script>
+                <script type="text/javascript" src="/fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+        -->
         <!-- Core theme JS-->
         <script src="assets/js/scripts.js"></script>
-        <script>
-               
-                const change = src => {
-                        document.getElementById('linkBigView').href = src;
-                        document.getElementById('mainIMG').src = src;
-                        document.getElementById('mainIMG').style.display = "block";
-                        document.getElementById('linkBigView').style.display = "block";
-                        document.getElementById('goRight').style.display = "block";
-                        document.getElementById('goLeft').style.display = "block";
-                        /* Dies Code sorgt dafür, dass das Bild nicht den ganzen Bildschirm einnimt, sondern maximal die Bildschirmhöhe */
-                        document.getElementById('mainIMG').style.height = "100%";
-                        document.getElementById('mainIMG').style.width = "100vh";
-                        document.getElementById('mainIMG').style.objectFit = "cover";
-                }
-
-                function closeME()
-                {
-                        document.getElementById('mainIMG').style.display = "none";
-                        document.getElementById('linkBigView').style.display = "none";
-                        document.getElementById('goRight').style.display = "none";
-                        document.getElementById('goLeft').style.display = "none";
-                }
-
-                function goLeft()
-                {
-                        //document.getElementById('linkBigView').href = src;
-                }
-
-                function goRight()
-                {
-                        //document.getElementById('linkBigView').href = src;
-                }
-
-        </script>
+        <!-- My JS :D -->
+        <script src="assets/js/simpleimageboard.js"></script>
 
 </body>
 </html>

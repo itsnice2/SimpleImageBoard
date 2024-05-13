@@ -57,4 +57,4 @@ if ($uploadOk == 0) {
 // https://websolutionstogo.de/blog/automatische-weiterleitung-http-redirect/
 header("Location: index.php");
 
-?>
+
