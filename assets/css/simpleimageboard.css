@@ -1,0 +1,177 @@
+/***** V A R I A B L E S ****************************************************************************************************************/
+
+:root{
+
+    /* F O N T S */
+    --sans-font: -apple-system, BlinkMacSystemFont, "Avenir Next", Avenir,
+    "Nimbus Sans L", Roboto, "Noto Sans", "Segoe UI", Arial, Helvetica,
+    "Helvetica Neue", sans-serif;
+    --mono-font: Consolas, Menlo, Monaco, "Andale Mono", "Ubuntu Mono", monospace;
+
+    /* B O R D E R S */
+    --border-radius: 5px;
+    --border-header: 10px;
+    --border-footer: 10px;
+
+    /* C O L O R S */
+    --bg: rgb(0, 0, 0);
+    --bg-light: rgb(128, 128, 128);
+    --bg-dark: rgb(54,54,54);
+    --text-light: rgb(222,222,222);
+    --text-dark: rgb(20,20,20);
+    --border-light: rgb(128, 128, 128);
+    --border-dark: rgb(0,0,0);
+    --link: rgb(255,0,0);
+    --link-hover: rgb(0,255,0);
+    --link-visited: rgb(0,0,255);
+    --choose-image-button: rgb(180, 180, 180);
+    --upload-button: rgb(255,0,0);
+    --upload-failed: rgb(255,0,0);
+    --upload-successful: rgb(0,255,0);
+
+    /*
+    --: rgb(0,0,0);
+    */
+
+    
+}
+
+/***** O T H E R ****************************************************************************************************************/
+
+body{
+    background-color: var(--bg);
+    color: var(--text-light);
+    font-family: var(--sans-font);
+}
+
+a{
+    color: var(--link);
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--link-hover);
+}
+
+a:visited{
+    color: var(--link);
+}
+
+/***** H E A D E R ****************************************************************************************************************/
+header{
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    background-color: var(--bg-dark);
+    border-bottom: 1px solid var(--border);
+    border-bottom-left-radius: var(--border-header);
+    border-bottom-right-radius: var(--border-header);
+    text-align: center;
+    padding: 0 0.5rem 0.1rem 0.5rem;
+    grid-column: 1 / -1;
+    color: var(--text-light);
+}
+
+.logo-img{
+    width: 1em;
+}
+
+header > nav ul,
+header > nav ol {
+  align-content: space-around;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0;
+  margin-top: -1.5em;
+  margin-bottom: 0.3em;
+  padding: 0;
+}
+
+/***** C O N T E N T ****************************************************************************************************************/
+
+content{
+    color: var(--text-light);
+    text-align: center;
+    padding: 0 0.5rem 2rem 0.5rem;
+    grid-column: 1 / -1;
+}
+
+.gallery-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-item {
+    display: block;
+    width: 150px;
+    margin: 10px;
+    border: 1px solid var(--border-light);
+    border-radius: var(--border-radius);
+    text-decoration: none;
+}
+
+.gallery-item img{
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    display: block;
+    border-radius: var(--border-radius);
+    /*width='150px'*/
+}
+
+
+/***** F O O T E R ****************************************************************************************************************/
+
+footer{
+    background-color: var(--bg-dark);
+    color: var(--text-light);
+    text-align: center;
+    padding: 0.01rem 0.5rem 0.01rem 0.5rem;
+    grid-column: 1 / -1;
+    border-top-left-radius: var(--border-footer);
+    border-top-right-radius: var(--border-footer);
+}
+
+.footer-img{
+    width: 1em;
+}
+
+/***** U P L O A D - A R E A ****************************************************************************************************************/
+
+input[type="file"] {
+    display: none;
+  }
+  
+.custom-file-upload {
+    color: var(--choose-image-button);
+    border: 1px solid var(--choose-image-button);
+    display: inline-block;
+    padding: 48px 96px;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    display: none;
+  }
+  
+.upload-button {
+    color: var(--upload-button);
+    border: 1px solid var(--upload-button);
+    display: inline-block;
+    padding: 6px 12px;
+    cursor: pointer;
+}
+
+.uploadsuccessful{
+    color: var(--upload-successful);
+}
+
+.uploadfailed{
+    color: var(--upload-failed);
+}
