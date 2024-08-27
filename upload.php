@@ -2,8 +2,11 @@
   setcookie('uploadstatus', 'YetToUploadSomething', 360);
   $_COOKIE['uploadstatus'] = 'YetToUploadSomething';
 ?>
-<?php require_once 'inc/de.php'; ?>
-<?php require_once 'inc/functions.php'; ?>
+<?php 
+    require_once 'inc/config.php';
+    require_once 'inc/' . $language . '.php';
+    require_once 'inc/functions.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="<?php echo $language; ?>">

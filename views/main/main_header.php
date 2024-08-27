@@ -1,6 +1,6 @@
 <header>
 
-<h1><?php echo $main_pagetitle; ?> <a href="/"><img src="assets/images/img.png" class="logo-img"></a></h1>
+<h1><?php echo $main_pagetitle; ?> <a href="<?php echo $index; ?>"><img src="assets/images/img.png" class="logo-img"></a></h1>
 
 <nav>
     <ul>

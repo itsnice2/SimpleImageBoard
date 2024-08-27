@@ -1,4 +1,8 @@
-<?php require_once 'inc/de.php'; ?>
+<?php 
+    require_once 'inc/config.php';
+    require_once 'inc/' . $language . '.php';
+    require_once 'inc/functions.php'; 
+?>
 
 <!DOCTYPE html>
 <html lang="<?php echo $language; ?>">
@@ -13,7 +17,7 @@
 
 <?php 
     //phpinfo();
-    require_once 'inc/functions.php';
+    
 
     require_once 'views/main/main_header.php';
     require_once 'views/main/main_content.php';
